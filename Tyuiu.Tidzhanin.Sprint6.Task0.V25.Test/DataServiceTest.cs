@@ -1,11 +1,21 @@
-﻿namespace Tyuiu.Tidzhanin.Sprint6.Task0.V25.Test
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Tyuiu.NargondoTI.Sprint6.Task0.V25.Lib;
+
+namespace Tyuiu.NargondoTI.Sprint6.Task0.V25.Test
 {
     [TestClass]
-    public sealed class DataServiceTest
+    public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidCalculate()
         {
+            DataService ds = new DataService();
+            double result = ds.Calculate(3);
+
+            double wait = 3 / Math.Sqrt(3 * 3 + 3);
+            wait = Math.Round(wait, 3);
+
+            Assert.AreEqual(wait, result);
         }
     }
 }
