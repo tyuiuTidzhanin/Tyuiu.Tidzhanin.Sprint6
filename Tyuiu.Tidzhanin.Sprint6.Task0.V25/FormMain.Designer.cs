@@ -35,7 +35,7 @@ namespace Tyuiu.NargondoTI.Sprint6.Task0.V25
             // pictureBoxFormula
             // 
             string username = Environment.UserName;
-            string imagePath = $"C:\\Users\\{username}\\source\\repos\\Tyuiu.NargondoTI.Sprint6\\img\\task0.png";
+            string imagePath = $"C:\\Users\\{username}\\source\\repos\\Tyuiu.Tidzhanin.Sprint6\\img\\task0.png";
             pictureBoxFormula.ImageLocation = imagePath;
             pictureBoxFormula.Location = new Point(20, 20);
             pictureBoxFormula.Name = "pictureBoxFormula";
