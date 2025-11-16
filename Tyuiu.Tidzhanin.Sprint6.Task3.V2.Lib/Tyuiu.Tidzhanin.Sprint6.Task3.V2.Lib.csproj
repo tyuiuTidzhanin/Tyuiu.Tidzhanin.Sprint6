@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FastReport.DataVisualization" Version="2026.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="tyuiu.cources.programming.interfaces">
       <HintPath>..\DLL\tyuiu.cources.programming.interfaces.dll</HintPath>
     </Reference>

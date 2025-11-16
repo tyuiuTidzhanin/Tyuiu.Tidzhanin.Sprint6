@@ -10,10 +10,13 @@
 
   <ItemGroup>
     <PackageReference Include="FastReport.DataVisualization" Version="2026.1.2" />
+    <PackageReference Include="HIC.System.Windows.Forms.DataVisualization" Version="1.0.1" />
+    <PackageReference Include="Maikebing.System.Windows.Forms.DataVisualization" Version="5.0.1" />
+    <PackageReference Include="WinForms.DataVisualization" Version="1.10.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.Tidzhanin.Sprint6.Task3.V2.Lib\Tyuiu.Tidzhanin.Sprint6.Task3.V2.Lib.csproj" />
+    <ProjectReference Include="..\Tyuiu.Tidzhanin.Sprint6.Task5.V24.Lib\Tyuiu.Tidzhanin.Sprint6.Task5.V24.Lib.csproj" />
   </ItemGroup>
 
 </Project>
