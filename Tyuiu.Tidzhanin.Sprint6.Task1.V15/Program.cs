@@ -1,3 +1,5 @@
+using Tyuiu.NargondoTI.Sprint6.Task1.V15;
+
 namespace Tyuiu.Tidzhanin.Sprint6.Task1.V15
 {
     internal static class Program
