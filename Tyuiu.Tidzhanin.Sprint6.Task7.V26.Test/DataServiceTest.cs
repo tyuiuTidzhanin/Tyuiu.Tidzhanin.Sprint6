@@ -13,11 +13,12 @@ namespace Tyuiu.Tidzhanin.Sprint6.Task7.V26.Test
             string path = "test.csv";
 
             File.WriteAllLines(path, new string[]
-            {
-                "1,6,3",
-                "4,2,5",
-                "7,8,9"
-            });
+           {
+    "1;6;3",
+    "4;2;5",
+    "7;8;9"
+           });
+
 
             DataService ds = new DataService();
             int[,] matrix = ds.GetMatrix(path);
