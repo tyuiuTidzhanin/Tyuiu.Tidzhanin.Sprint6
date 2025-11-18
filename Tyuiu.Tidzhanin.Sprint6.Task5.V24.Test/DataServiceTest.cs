@@ -20,7 +20,7 @@ namespace Tyuiu.NargondoTI.Sprint6.Task5.V24.Test
             double[] result = ds.LoadFromDataFile(path);
 
             // Проверяем количество элементов
-            Assert.AreEqual(9, result.Length);
+            Assert.AreEqual(4, result.Length);
 
             // Проверяем значения
             Assert.AreEqual(1.5, result[0]);

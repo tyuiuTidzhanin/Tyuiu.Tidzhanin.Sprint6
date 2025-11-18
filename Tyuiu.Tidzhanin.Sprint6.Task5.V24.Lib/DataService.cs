@@ -24,7 +24,7 @@ namespace Tyuiu.NargondoTI.Sprint6.Task5.V24.Lib
                         System.Globalization.CultureInfo.InvariantCulture,
                         out double num))
                     {
-                        if (Math.Abs(num) < 1e-10)   // выбрать только нули
+                        if (Math.Abs(num) < 1e-10)   
                         {
                             zeros.Add(0.0);
                         }
@@ -32,7 +32,7 @@ namespace Tyuiu.NargondoTI.Sprint6.Task5.V24.Lib
                 }
             }
 
-            return zeros.ToArray();  // ✔ Портал ожидает [0.0, 0.0]
+            return zeros.ToArray(); 
         }
 
         
