@@ -7,7 +7,6 @@ namespace Tyuiu.Tidzhanin.Sprint6.Task7.V26.Lib
 {
     public class DataService : ISprint6Task7V26
     {
-        // Чтение матрицы из CSV (разделитель ;)
         public int[,] GetMatrix(string path)
         {
             string[] lines = File.ReadAllLines(path);
@@ -19,13 +18,18 @@ namespace Tyuiu.Tidzhanin.Sprint6.Task7.V26.Lib
             {
                 int[] values = lines[i].Split(';').Select(s => int.Parse(s.Trim())).ToArray();
                 for (int j = 0; j < cols; j++)
-                    matrix[i, j] = values[j];
+                {
+                    if (j == 1 && values[j] > 5) // Второй столбец, положительные > 5
+                        matrix[i, j] = 222;
+                    else
+                        matrix[i, j] = values[j];
+                }
             }
 
             return matrix;
         }
 
-        // Обработка матрицы: второй столбец, положительные числа > 5 → 222
+
         public int[,] ProcessMatrix(int[,] matrix)
         {
             int rows = matrix.GetLength(0);
@@ -46,7 +50,6 @@ namespace Tyuiu.Tidzhanin.Sprint6.Task7.V26.Lib
             return result;
         }
 
-        // Сохранение матрицы в CSV (разделитель ;)
         public void SaveMatrix(int[,] matrix, string path)
         {
             int rows = matrix.GetLength(0);
