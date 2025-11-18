@@ -11,18 +11,19 @@ namespace Tyuiu.Tidzhanin.Sprint6.Task7.V26.Lib
         {
             string[] lines = File.ReadAllLines(path);
             int rows = lines.Length;
-            int cols = lines[0].Split(',').Length;
+            int cols = lines[0].Split(';').Length;
             int[,] matrix = new int[rows, cols];
 
             for (int i = 0; i < rows; i++)
             {
-                int[] values = lines[i].Split(',').Select(int.Parse).ToArray();
+                int[] values = lines[i].Split(';').Select(s => int.Parse(s.Trim())).ToArray();
                 for (int j = 0; j < cols; j++)
                     matrix[i, j] = values[j];
             }
 
             return matrix;
         }
+
 
         public int[,] ProcessMatrix(int[,] matrix)
         {
